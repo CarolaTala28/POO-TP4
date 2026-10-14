@@ -6,8 +6,7 @@ public class Temperature {
     public Temperature() {
         this.celsius = 0;
     }
-
-    public double getCelsius() {
+        public double getCelsius() {
         return celsius;
     }
 
@@ -31,5 +30,20 @@ public class Temperature {
         this.celsius = value - 273.15;
     }
 
-}
+    public double getRankine(){
+        return celsius * 9 / 5 + 491.67;
+    }
 
+    public void setRankine(double value){
+        this.celsius = (value - 491.67) * 9 / 5;
+    }
+
+    public double getReaumur(){
+        return celsius * 4 / 5;
+    }
+
+    public void setReaumur(double value){
+        this.celsius = value * 5 / 4;
+    }
+
+}

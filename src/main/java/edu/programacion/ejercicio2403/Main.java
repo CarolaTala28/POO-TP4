@@ -7,6 +7,8 @@ public class Main {
         System.out.println("Celsius: " + temperatura.getCelsius());
         System.out.println("Fahrenheit: " + temperatura.getFahrenheit());
         System.out.println("Kelvin: " + temperatura.getKelvin());
+        System.out.println("Nota Rankine: " + temperatura.getRankine());
+        System.out.println("Nota Reaumur: " + temperatura.getReaumur());
 
         temperatura.setCelsius(5);
 
@@ -15,5 +17,7 @@ public class Main {
         System.out.println("Celsius: " + temperatura.getCelsius());
         System.out.println("Fahrenheit: " + temperatura.getFahrenheit());
         System.out.println("Kelvin: " + temperatura.getKelvin());
+        System.out.println("Nota Rankine: " + temperatura.getRankine());
+        System.out.println("Nota Reaumur: " + temperatura.getReaumur());
     }
 }
