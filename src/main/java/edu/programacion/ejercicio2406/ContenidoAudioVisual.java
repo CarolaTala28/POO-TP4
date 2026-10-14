@@ -2,7 +2,7 @@ package edu.programacion.ejercicio2406;
 
 import java.util.ArrayList;
 
-public class ContenidoAudioVisual {
+public abstract class ContenidoAudioVisual {
     private String titulo;
     private int anioEstreno;
     private ArrayList<Actor> actores;

@@ -2,18 +2,24 @@ package edu.programacion.ejercicio2406;
 
 public class Main {
     public static void main(String[] args) {
-        Actor actor1 = new Actor("Daniel", "Radcliffe");
-        Director director1 = new Director("Chris", "Columbus");
-        Personaje personaje1 = new Personaje("Harry Potter", actor1);
+        Actor actor1 = new Actor("Leonardo", "DiCaprio");
+        Director director1 = new Director("Christopher", "Nolan");
 
         Pelicula pelicula = new Pelicula(
-                "Harry Potter y la piedra filosofal",
-                2001,
-                152
+                "Origen",
+                2010,
+                148
         );
 
         pelicula.agregarActor(actor1);
         pelicula.agregarDirector(director1);
+
+        Personaje personaje1 = new Personaje(
+                "cobb",
+                actor1,
+                "Personaje principal de la pelicula"
+        );
+
         pelicula.agregarPersonaje(personaje1);
 
         System.out.println("Pelicula: " + pelicula.getTitulo());
@@ -21,16 +27,15 @@ public class Main {
         System.out.println("Duracion: " + pelicula.getDuracionMinutos());
         System.out.println("Personaje: " + pelicula.getPersonajes().get(0).getNombre());
 
-        Serie serie = new Serie("Serie de prueba", 2025);
+        Serie serie = new Serie("Dark", 2017, 3);
 
-        Capitulo capitulo1 = new Capitulo("Primer capitulo", 1);
-        Capitulo capitulo2 = new Capitulo("Segundo capitulo", 2);
+        Capitulo capitulo1 = new Capitulo("Secretos", 1, 50);
 
         serie.agregarCapitulo(capitulo1);
-        serie.agregarCapitulo(capitulo2);
 
         System.out.println("Serie: " + serie.getTitulo());
-        System.out.println("Cantidad de capitulos: " + serie.cantidadCapitulos());
+        System.out.println("Temporadas: " + serie.getTemporadas());
+        System.out.println("Capitulo: " + serie.getCapitulos().size());
 
 
     }
